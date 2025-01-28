@@ -1,0 +1,16 @@
+.image_box {
+  width: 450px;
+}
+.photo1 {
+  position: absolute;
+  top: 58px;
+}
+.photo2 {
+  position: absolute;
+  top: 182px;
+  left: -88px;
+}
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+}
