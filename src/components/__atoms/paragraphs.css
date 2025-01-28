@@ -4,8 +4,11 @@
 }
 .text1 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
+}
+.text1.bold {
+  font-weight: 700;
 }
 .text1:hover {
   color: #f47b56;

@@ -5,17 +5,19 @@ import { useState } from "react";
 function Paragraphs({ question, answer }) {
   const [showText, setShowText] = useState(false);
   const [rotate, setRotate] = useState(false);
+  const [isbold, setIsbold] = useState(false);
 
   function displaytext() {
     setShowText(!showText);
     setRotate(!rotate);
+    setIsbold(!isbold);
   }
 
   return (
     <>
       <div onClick={displaytext} className="text_image_cont">
-        <h1 className="text1">{question}</h1>
-        <button  className="button">
+        <h1 className={`text1 ${isbold ? "bold" : ""}`}>{question}</h1>
+        <button className="button">
           <img src={arrowimage} className={rotate ? "rotate" : ""} />
         </button>
       </div>
@@ -28,4 +30,5 @@ function Paragraphs({ question, answer }) {
     </>
   );
 }
+
 export default Paragraphs;

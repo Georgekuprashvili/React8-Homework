@@ -10,6 +10,9 @@
   top: 182px;
   left: -88px;
 }
+.photo3 {
+  display: none;
+}
 .heading {
   font-size: 32px;
   font-weight: 700;
@@ -27,4 +30,33 @@
   flex-direction: column;
   gap: 10px;
   height: 375px;
+}
+@media (max-width: 870px) {
+  .photo1 {
+    display: none;
+  }
+  .photo2 {
+    display: none;
+  }
+  .photo3 {
+    display: block;
+    position: absolute;
+    left: 57px;
+    top: -103px;
+  }
+  .paragraph_cont {
+    margin-top: 100px;
+  }
+  .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 450px) {
+  .photo3 {
+    left: 18px;
+  }
+  .paragraph_cont {
+    width: 300px;
+  }
 }

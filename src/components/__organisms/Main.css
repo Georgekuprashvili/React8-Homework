@@ -7,3 +7,16 @@
   border-radius: 30px;
   position: relative;
 }
+@media (max-width: 870px) {
+  .container {
+    flex-direction: column;
+    width: auto;
+    height: 650px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    width: 327px;
+    height: 744px;
+  }
+}
