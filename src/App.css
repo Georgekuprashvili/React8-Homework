@@ -10,3 +10,8 @@
   align-items: center;
   background-color: #b068e9;
 }
+@media (max-width: 450px) {
+  #root {
+    height: 1000px;
+  }
+}
