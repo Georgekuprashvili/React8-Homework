@@ -14,17 +14,15 @@ function Paragraph() {
   return (
     <>
       <h1 className="heading">FAQ</h1>
-
       <div>
         <ul>
-          {data.map((product, key) => {
-            return (
-              <Paragraphs
-                key={key}
-                answer={product.title}
-              />
-            );
-          })}
+          {data.map((product, key) => (
+            <Paragraphs
+              key={key}
+              question={product.title}
+              answer={product.quote}
+            />
+          ))}
         </ul>
       </div>
     </>
