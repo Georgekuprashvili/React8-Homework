@@ -13,17 +13,19 @@ function Paragraph() {
 
   return (
     <>
-      <h1 className="heading">FAQ</h1>
-      <div>
-        <ul>
-          {data.map((product, key) => (
-            <Paragraphs
-              key={key}
-              question={product.title}
-              answer={product.quote}
-            />
-          ))}
-        </ul>
+      <div className="paragraph_cont">
+        <h1 className="heading">FAQ</h1>
+        <div className="ul_cont">
+          <ul className="text_list">
+            {data.slice(0, 5).map((product, key) => (
+              <Paragraphs
+                key={key}
+                question={product.author}
+                answer={product.quote}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );

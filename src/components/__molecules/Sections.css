@@ -13,4 +13,18 @@
 .heading {
   font-size: 32px;
   font-weight: 700;
+  margin-left: 40px;
+}
+.paragraph_cont {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  justify-content: space-around;
+}
+.text_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 375px;
 }
