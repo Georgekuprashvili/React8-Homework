@@ -5,6 +5,10 @@
 .text1 {
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
+}
+.text1:hover {
+  color: #f47b56;
 }
 .text2 {
   font-size: 14px;

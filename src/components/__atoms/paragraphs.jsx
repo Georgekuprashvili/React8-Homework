@@ -13,9 +13,9 @@ function Paragraphs({ question, answer }) {
 
   return (
     <>
-      <div className="text_image_cont">
+      <div onClick={displaytext} className="text_image_cont">
         <h1 className="text1">{question}</h1>
-        <button onClick={displaytext} className="button">
+        <button  className="button">
           <img src={arrowimage} className={rotate ? "rotate" : ""} />
         </button>
       </div>
