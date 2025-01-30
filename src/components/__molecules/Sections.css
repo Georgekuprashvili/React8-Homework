@@ -23,15 +23,16 @@
   flex-direction: column;
   width: 400px;
   height: 100%;
-  justify-content: space-around;
+  margin-top: 20px;
 }
 .text_list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 375px;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
 }
-@media (max-width: 870px) {
+@media (max-width: 755px) {
   .photo1 {
     display: none;
   }
@@ -40,23 +41,18 @@
   }
   .photo3 {
     display: block;
-    position: absolute;
-    left: 57px;
-    top: -103px;
+  }
+  .image_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
   }
   .paragraph_cont {
-    margin-top: 100px;
+    width: 100%;
+    gap: 50px;
   }
-  .heading {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (max-width: 450px) {
-  .photo3 {
-    left: 18px;
-  }
-  .paragraph_cont {
-    width: 300px;
+  .text_list {
+    gap: 5px;
   }
 }
