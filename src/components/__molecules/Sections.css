@@ -54,7 +54,8 @@
   }
   .text_list {
     gap: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
+    margin-left: -20px;
   }
   .heading_box {
     display: flex;
